@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gunanka N K Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Gunanka N K</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpeg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!!</span>
+			            <h1 class="mb-4 mt-3">I am <span>Gunanka     </span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Quick Learner  ',
+						'Enthusiastic  ',
+						'Inquisitive   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Fresher Graduate</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/gunanka-n-k-59806b246/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Gunanka02?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Gunanka N K</span></p>
+										<p><span class="title-s">Qualification: </span> <span>Bachelor of Engineering</span></p>
+										<p><span class="title-s">Branch: </span> <span>Artificial Intelligence and Machine Learning</span></p>
+										<!-- <p><span class="title-s">Address: </span> <span>Mandya, India - 571433</span></p> -->
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Technical Skills:</p>
+									<span>PYTHON</span>
+									<div >
+									</div>
+									
+									<span>JAVA</span> 
+									<div >
+									</div>
+									
+									<span>HTML</span>
+									<div >
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CSS</span> 
+									<div >
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>MySQL</span> 
+									<div >
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Artificial Intelligence</span> 
+									<div >
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> 
+									<div >
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am Gunanka, a hardworking and ambitious Artificial Intelligence and Machine Learning graduate who has recently completed my Bachelor's degree. My passion for technology drives me to excel both academically and in competitive coding. As a fresher, I am dedicated to honing my coding skills and using them to create innovative solutions. Eager to contribute to the tech industry, I am actively searching for job opportunities where I can apply my knowledge and enthusiasm to make a meaningful impact.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<!-- <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<!-- <li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li> -->
+									<li class="d-flex"><span>Language:</span> <span>English,Kannada, Hindi.</span></li>
+									<li class="d-flex"><span>Frameworks:</span> <span>OPENCV, PANDAS, NUMPY, TENSORFLOW, SCIKIT-LEARN, SENTIMENTAL ANALYSIS, KERAS, NLTK, &amp; MATPLOTLIB.</span></li>
+									<li class="d-flex"><span>Developer Tools:</span> <span>VS code, Anaconda, Google Collab, Android Studio, PyCharm,  &amp; Eclipse.</span></li>
+									<li class="d-flex"><span>Course Work:</span> <span> OPERATING SYSTEM, DATA STRUCTURES AND ALGORITHMS, DBMS, INTERNET OF THINGS,  &amp; DEEP LEARNING </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/gunanka-n-k-59806b246/" class="btn btn-primary py-3 px-3">LinkedIn</a><a href="https://github.com/Gunanka02?tab=repositories" class="btn btn-primary py-3 px-3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Looking for a challenging career that demands the best of my professional 
+				ability in terms of technical and analytical skills and helps me in broadening 
+				and enhancing my current skillset and knowledge.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Aug 2023 - Sep 2023</span>
+					<h2>Machine Learning with Python Intern</h2>
+					<span class="position">Varcons Technologies Pvt.Ltd</span>
+					<p class="mt-4">Varcons Technologies is a leading provider of cutting-edge technologies and services, offering scalable solutions for businesses of all sizes.
+						<ul>
+							<li>Implemented sentiment analysis models for Stockport news headlines using Python, Scikit-learn, and TensorFlow.</li>
+							<li>Collaborated with team to integrate analysis into decision-making processes.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Aug 2023 – Dec 2023 </span>
+					<h2>Training And Development Intern </h2>
+					<span class="position"> CAPGEMINI Internship [ICT Academy] </span>
+					<p class="mt-4">420 hours of immense training & internship.
+						It included 
+						 Soft Skills development,
+						C#,
+						Dot Net framework,
+						Frontend technologies,
+						 Database management.
+						<ul>
+							
+							<li>Designed & implemented C#.NET modules for a blood bank system with 
+								a primary emphasis on database administration .</li>
+							<li>Contributed significantly to the development of various modules, ensuring 
+								efficient functionality and a user-friendly interface.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">May 2022 – Nov 2022 </span>
+					<h2>Full Stack Web Developer Intern </h2>
+					<span class="position"> Sookshmas E-Learning Pvt.Ltd </span>
+					<p class="mt-4">A learning & education social media to connect every student, making everyday engagement into learning more interesting and simpler than ever before!
+						<ul>
+							<li>I employ HTML and CSS to create front-end user interfaces for a number 
+								of complex online projects with skill </li>
+							<li>I have applied my proficient backend knowledge to oversee database 
+								maintenance and monitoring processes, thereby ensuring optimal 
+								performance for the Grocery Web Application.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Pre - University</h2>
+    					<span class="position">Department Of Pre-University Education</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample projects I have completed, encompassing Python, Machine Learning, Artificial Intelligence, and Full Stack Development.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Gunanka02/onlinebookstore-/blob/main/onlinebookstore-master/WebContent/index.html" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Gunanka02/onlinebookstore-/blob/main/onlinebookstore-master/WebContent/index.html">Online Book Store</a></h3>
+                <p>An Online Book Store that offers selection of books for purchase with convenient browsing and secure transactions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Gunanka02/Hand_gesture_recog/blob/main/Count.py" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Gunanka02/Hand_gesture_recog/blob/main/Count.py">Hand Gesture Recognition Model in Python</a></h3>
+                <p>A Hand Gesture Recognition Model in Python that accurately identifies and interprets various hand gestures using computer vision techniques.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Gunanka02/Stockport/blob/main/Stockprediction_twitter_sentimental_analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Gunanka02/Stockport/blob/main/Stockprediction_twitter_sentimental_analysis.ipynb">Stockport Sentimental Analysis</a></h3>
+                <p>A Stockport Sentiment Analysis project that uses news headlines to gauge public sentiment and its impact on the stock market.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Gunanka02/Virtual_mouse/blob/main/mouse.py" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Gunanka02/Virtual_mouse/blob/main/mouse.py">Virtual Mouse using Python</a></h3>
+				  <p>A Virtual Mouse using Python that leverages hand gesture recognition with OpenCV, Mediapipe, and PyAutoGUI to control cursor movements and perform clicks.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Gunanka02/Blood_bank_management_system/blob/master/Blood_bank.sln" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Gunanka02/Blood_bank_management_system/blob/master/Blood_bank.sln">Blood Bank Management System</a></h3>
+				  <p>A Blood Bank Management System implemented in C# using .NET, designed to efficiently manage blood inventory, donor records, and blood requests.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+				  <p>Mandya, India - 571433</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel://0101010101">+91 8951128567</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+				  <p><a href="mailto:info@yoursite.com">gunankakumar@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Download Resume</h3>
+				  <p><a href="https://drive.google.com/file/d/1aavNfeRt10YtkKbCyC7JIUnaiLvZpcdU/view?usp=sharing">Resume_link</a></p>
+				</div>
+			</div>
+		
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Gunanka02?tab=repositories"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/gunanka-n-k-59806b246/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <li class="ftco-animate"><a href="https://www.instagram.com/gunanka_raj/?hl=en"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved   </a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
